@@ -1,0 +1,24 @@
+{{define "body"}}
+
+<h1>Добавление водителя</h1>
+
+<form class="pure-form pure-form-aligned" method="POST" action="/driver/add" >
+	<fieldset>
+		<div class="pure-control-group">
+			<label for="firstName">Имя</label>
+			<input id="firstName" name="firstName" type="text" placeholder="Василий">
+		</div>
+		<div class="pure-control-group">
+			<label for="lastName">Фамилия</label>
+			<input id="lastName" name="lastName" type="text" placeholder="Пупкин">
+		</div>
+		<div class="pure-controls">
+			<button type="submit" class="pure-button pure-button-primary">Добавить</button>
+		</div>		
+	</fieldset>
+</form>
+
+
+<a href="/driver/list">Просмотр водителей</a>
+
+{{end}}
